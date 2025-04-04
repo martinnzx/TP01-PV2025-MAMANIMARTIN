@@ -8,6 +8,15 @@ h1{
 body{
     background-color:rgb(231, 217, 192);
 }
+
+.imagen-central{
+    width: 55%;
+}
+
+.imagenes-aux{
+    width: 40%;
+}
+
 h2{
     color:rgb(88, 58, 19);
     font-size: 25px;
@@ -54,3 +63,4 @@ div{
 form{
     text-align: center;
 }
+
