@@ -1,3 +1,5 @@
+/* Pagina Principal */
+
 h1{
     color:rgb(88, 58, 19);
     font-size: 50px;
@@ -5,16 +7,16 @@ h1{
     text-align: center;
     text-decoration: underline;
 }
+
 body{
     background-color:rgb(231, 217, 192);
 }
 
-.imagen-central{
-    width: 55%;
+.contenedor{
+    text-align: center;
 }
-
-.imagenes-aux{
-    width: 40%;
+.imagen-jujuy{
+    width: 80%;
 }
 
 h2{
@@ -23,44 +25,61 @@ h2{
     font-family: Verdana;
     text-decoration: underline;
 }
+
 p{
     font-size: 18px;
     font-family:Tahoma;
     text-align: justify;
 }
-.lista-ordenada{
+
+.listas-ordenadas{
     font-size: 18px;
     font-family:Tahoma;
     text-align: justify;
     font-style: italic;
     font-weight: bold;
 }
-.museos-contactos{
+
+.titulo-museos-contactos{
     color:rgb(88, 58, 19);
     font-size: 25px;
     font-family: Verdana;
     text-decoration: underline;
     text-align: center;
 }
+
 div{
     text-align: center;
 }
-#id-museo{
-    font-size: 20px;
-}
-#id-contacto{
-    font-size: 20px;
+
+.enlaces{
+    font-size: 17px;
 }
 
 
-.titulos-paginas{
+/* Pagina Museo y Contacto */
+
+.h1-museo-contacto{
     font-size: 30px;
 }
-#id-enlace-museo{
-    font-size: 20px;
+
+.imagenes-auxiliares{
+    width: 45%;
 }
 
 form{
+    text-align: center;
+}
+
+.footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 1%;
+}
+
+.parrafo-footer{
     text-align: center;
 }
 

@@ -7,52 +7,65 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <h1 class="titulos-paginas">Contacto</h1>
+    <main>
+        <!-- Encabezado de la pagina -->
+        <header>
+            <h1 class="h1-museo-contacto">Contacto</h1>
+        </header>
 
-    <div>
-        <img class="imagenes-aux" src="assets/images/Contacto.jpeg" alt="Imagen Contacto">
-    </div>
-    
-    <p>Si tienes alguna consulta, comentario o necesitas más información, no dudes en comunicarte con nosotros. Estamos aquí para ayudarte y responder todas tus preguntas. Puedes escribirnos via mensaje a traves de este formulario de contacto. ¡Esperamos tu mensaje!</p>
-    
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" required>
-
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" placeholder="Ingresa tu correo" required>
+        <!-- Imagen destacada -->
+        <div>
+            <img class="imagenes-auxiliares" src="assets/images/Contacto.jpeg" alt="Contacto">
+        </div>
         
-        <label for="mensaje">Mensaje:</label>
-        <input type="text" id= "mensaje" placeholder="Ingresa tu mensaje aquí" required>
-        
-        <input type="submit" onclick="enviarFormulario()">
-    </form>
+        <!-- Parrafo introductorio -->
+        <section>
+            <p>
+                Si tienes alguna consulta, comentario o necesitas más información, no dudes en comunicarte con nosotros. Estamos aquí para ayudarte y responder todas tus preguntas. Puedes escribirnos via mensaje a traves de este formulario de contacto. ¡Esperamos tu mensaje!
+            </p>
+        </section>
 
-    <script>
-        function enviarFormulario(){
+        <!-- Formulario -->
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
 
-            event.preventDefault();
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
 
-            var nombre = document.getElementById("nombre").value;
-            var apellido = document.getElementById("apellido").value;
-            var correo = document.getElementById("correo").value;
-            var mensaje = document.getElementById("mensaje").value;
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" placeholder="Ingresa tu correo" required>
             
-            console.log("Nombre:", nombre);
-            console.log("Apellido:" , apellido);
-            console.log("Correo:" , correo);
-            console.log("Mensaje:" , mensaje);
+            <label for="mensaje">Mensaje:</label>
+            <input type="text" id= "mensaje" placeholder="Ingresa tu mensaje aquí" required>
+            
+            <input type="submit" onclick="enviarFormulario()">
+        </form>
 
-            alert(
-                "Nombre: " + nombre + "\n" +
-                "Apellido: " + apellido + "\n" +
-                "Correo: " + correo + "\n" +
-                "Mensaje: " + mensaje
-            );
-        }
-    </script>
+        <!-- Script alerta -->
+        <script>
+            function enviarFormulario(){
+
+                event.preventDefault();
+
+                var nombre = document.getElementById("nombre").value;
+                var apellido = document.getElementById("apellido").value;
+                var correo = document.getElementById("correo").value;
+                var mensaje = document.getElementById("mensaje").value;
+                
+                console.log("Nombre:", nombre);
+                console.log("Apellido:" , apellido);
+                console.log("Correo:" , correo);
+                console.log("Mensaje:" , mensaje);
+
+                alert(
+                    "Nombre: " + nombre + "\n" +
+                    "Apellido: " + apellido + "\n" +
+                    "Correo: " + correo + "\n" +
+                    "Mensaje: " + mensaje
+                );
+            }
+        </script>
+    </main>
 </body>
 </html>
